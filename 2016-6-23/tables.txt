@@ -1,0 +1,100 @@
+//创建用户信息表
+
+create table `user`(
+`id` int(10) PRIMARY KEY auto_increment,
+`username` VARCHAR (255) UNIQUE,
+`password` VARCHAR (255),
+`email` VARCHAR (255),
+`reg_time` datetime,
+`reg_ip` VARCHAR (255),
+`last_login_time` datetime,
+`last_login_ip` VARCHAR (255),
+`login_count` VARCHAR (255),
+`status` INT (5)
+) engine=innodb DEFAULT charset=utf8;
+
+id 用户名 密码 邮箱 注册时间 注册IP 最后登录时间 最后登录IP 登录次数 登录状态
+
+
+//创建商品上传表
+
+create table `upload`(
+`id` int(10) PRIMARY KEY auto_increment,
+`commodity_classification` VARCHAR (255),
+`subclass` VARCHAR (255),
+ `publisher` VARCHAR (255),
+`commodity_name` VARCHAR (255) UNIQUE,
+`commodity_price` VARCHAR (255),
+`commodity_information` text,
+`content` text,
+`img_information` VARCHAR (255),
+`upload_time` datetime,
+`upload_ip` VARCHAR (255)
+) engine=innodb DEFAULT charset=utf8;
+
+id	商品分类（commodity_classification）	子类（subclass）
+	发布者（publisher）			详细（content）
+	商品名称(commodity_name)		商品价格(commodity_price)
+	商品信息(commodity_information)		图片信息(地址 img_information)
+	上传时间(upload_time)			上传ip(upload_ip)
+
+//管理员信息表
+
+create table `admin`(
+`id` int(10) PRIMARY KEY auto_increment,
+`username` VARCHAR (255) UNIQUE,
+`password` VARCHAR (255),
+`last_login_time` datetime,
+`last_login_ip` VARCHAR (255),
+`login_count` VARCHAR (255),
+`status` INT (10)
+) engine=innodb DEFAULT charset=utf8;
+
+//商品类别
+create table `type`(
+`id` int(10) PRIMARY KEY auto_increment,
+`type` VARCHAR (255)
+) engine=innodb DEFAULT charset=utf8;
+
+//商品子类
+create table `min_type`(
+`id` int(10) PRIMARY KEY auto_increment,
+`u_id` int(10),
+`min_type` VARCHAR (255)
+) engine=innodb DEFAULT charset=utf8;
+
+
+//购物车表
+create table `shop`(
+`id` int(10) PRIMARY KEY auto_increment,
+`u_id` int(10),
+`qty` int(10),
+`price` float,
+`name` varchar(50),
+`img` varchar(250),
+`add_time` datetime,
+`add_ip` VARCHAR (50)
+) engine=innodb DEFAULT charset=utf8;
+
+id（购物车商品id）	u_id（商品id）		qty（商品数量）
+price（商品价格）	name（商品名称）	img（商品图片）
+add_time（添加时间）	add_ip（添加ip）
+
+
+//收货人信息
+create table `goods`(
+`id` int(10) PRIMARY KEY auto_increment,
+`name` varchar(50),
+`photo` int(10),
+`address` varchar(50),
+`email` varchar(50)
+) engine=innodb DEFAULT charset=utf8;
+
+name（收货人）	photo（电话）	address（地址）	  email（邮箱）
+
+
+
+
+
+
+

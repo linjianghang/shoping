@@ -1,0 +1,73 @@
+
+body{
+    background: #ff551d;
+   margin: auto;
+    font-family: "微软雅黑";
+}
+.content{
+    float: left;
+    border: 1px #871e17 solid;
+    margin: 20px 0px 20px 20px;
+    padding: 10px;
+    background: #ff392b;
+}
+#display{
+    float: left;
+    width: 250px;
+    border: 1px #c54216 solid;
+    background: #dcc0b4;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 350px;
+}
+#display ul{
+    list-style: none;
+    margin-left: -40px;
+    padding-top: 5px;
+}
+#display ul li{
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+#title{
+    text-align: center;
+    font-size: 25px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 20px;
+    font-weight: bold;
+    background: #ff7744;
+    color: #ffffff;
+    border: 1px #ff613e solid;
+    margin: 20px;
+}
+#subclass{
+    font-size: 15px;
+    color: #ffffff;
+    margin-left: 30px;
+    letter-spacing: 1mm;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #0013ff;
+}
+#top{
+    background: #ff551d;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ec300f;
+    box-shadow: 0 1px 2px rgba(0,0,0,.10);
+    font-size: 12px;
+    text-align: right;
+    padding-right: 100px;
+}
+#top a{
+    color: #ffffff;
+}
+#top a:hover{
+    color: #008aff;
+    text-decoration: underline;
+}

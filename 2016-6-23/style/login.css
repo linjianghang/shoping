@@ -1,0 +1,65 @@
+
+.login{
+    font-size: 45px;
+    font-family: '微软雅黑';
+    color: #6f6f6f;
+    background: #ededf3;
+    padding: 10px 35px;
+    height: 70px;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0 1px 2px rgba(0,0,0,.10);
+}
+.xingxi{
+    background: #f6f6fc;
+    height: 500px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.xingxi ul{
+    list-style: none;
+
+
+}
+.xingxi ul li {
+    background: #ffffff;
+    border: 1px #e4e4e9 solid;
+    height: 50px;
+    line-height: 50px;
+    width: 500px;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+input{
+    height: 30px;
+    width: 350px;
+    border: 1px #ffffff solid;
+}
+.submit{
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 50px;
+    width: 525px;
+    font-family: '微软雅黑';
+    background: #ee2222;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+.zj{
+    margin-top: 20px;
+    margin-left: 260px;
+}
+.zj a{
+    font-size: 15px;
+    color: #04569A;
+    text-decoration: none;
+}
+.zj a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.error{
+    color: red;
+    font-size: 13px;
+    margin-left: 10px;
+}
